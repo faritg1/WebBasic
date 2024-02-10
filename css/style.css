@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    min-height: 100vh;
+    min-width: 100vw;
+    font-family: 'Montserrat', sans-serif;
+    overflow:visible;
+}
+
+.HeaderPrin{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+}
+
+.UlContPrin{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    list-style: none;
+    background-color: #0097a7;
+    color: white;
+    padding: 20px;
+}
+
+.TextWhite{
+    color: white;
+}
+
+.iconUbi{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn{
+    width: 100px;
+    height: 50px;
+    background-color: #0097a7;
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+    border: none;
+
+}
+
+.ContenUbi{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-image: url(../img/hero.jpg);
+    background-size: cover;
+    height: 50vh;
+}
+
+.ConteArticulo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.iconCircle{
+    background-color: #0097a7;
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    margin-right: 40px;
+    transition: filter  3s;
+}
+
+.TitleService{
+    text-align: center;
+}
+
+.ArticleInfo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.ContenService{
+    background-color: antiquewhite;
+    padding: 10px;
+    margin: 10px auto;
+    width: 90%;
+    border-radius: 20px;
+
+}
