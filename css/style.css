@@ -6,31 +6,47 @@
     padding: 0;
 }
 
+:root {
+    --blanco: #ffffff;
+    --oscuro: #212121;
+    --primario: #ffc107;
+    --secundario: #0097a7;
+    --gris: #757575;
+}
+
 body{
     min-height: 100vh;
     min-width: 100vw;
     font-family: 'Montserrat', sans-serif;
-    overflow:visible;
+    overflow-x: hidden;
 }
 
-.HeaderPrin{
+.headerPrin{
     display: flex;
     align-items: center;
     justify-content: center;
     height: 50px;
 }
 
-.UlContPrin{
+.ulContPrin{
     display: flex;
     align-items: center;
     justify-content: space-around;
     list-style: none;
-    background-color: #0097a7;
-    color: white;
+    background-color: var(--secundario);
     padding: 20px;
 }
 
-.TextWhite{
+li > a {
+    text-decoration: none;
+    color: var(--blanco);
+}
+
+li > a:hover {
+    color: var(--primario);
+}
+
+.textWhite{
     color: white;
 }
 
@@ -43,12 +59,16 @@ body{
 .btn{
     width: 100px;
     height: 50px;
-    background-color: #0097a7;
-    color: white;
+    background-color: var(--secundario);
+    color: var(--blanco);
     border-radius: 10px;
     cursor: pointer;
     border: none;
+}
 
+.btn:hover{
+    color: var(--secundario);
+    background-color: var(--blanco);
 }
 
 .ContenUbi{
@@ -58,7 +78,8 @@ body{
     flex-direction: column;
     background-image: url(../img/hero.jpg);
     background-size: cover;
-    height: 50vh;
+    height: 70vh;
+    width: 100%;
 }
 
 .ConteArticulo{
@@ -68,7 +89,7 @@ body{
 }
 
 .iconCircle{
-    background-color: #ffc107;
+    background-color: var(--primario);
     height: 150px;
     width: 150px;
     border-radius: 50%;
@@ -92,15 +113,21 @@ body{
 }
 
 .textGreen{
-    color: #0097a7;
+    color: var(--secundario);
 }
 
-.ContenService{
-    background-color: white;
-    padding: 10px;
-    margin: 10px auto;
+.mainCont {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.contenService{
     width: 90%;
     height: 90%;
+    background-color: var(--blanco);
     border-radius: 20px;
     box-shadow: 11px 11px 33px 0px rgba(0,0,0,0.75);
     display: flex;
@@ -114,9 +141,9 @@ legend{
 }
 
 .formulario{
-    width: 50vw;
+    width: 100%;
     height: 60%;
-    background-color: grey;
+    background-color: var(--gris);
     padding: 20px;
     border-radius: 20px;
 }
@@ -147,7 +174,7 @@ fieldset{
 }
 
 .boton{
-    background-color: #0097a7;
+    background-color: var(--secundario);
     color: white;
     border-radius: 10px;
     cursor: pointer;
